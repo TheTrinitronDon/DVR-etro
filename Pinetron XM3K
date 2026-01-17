@@ -1,16 +1,16 @@
-#Pinetron PDR-XM3K | PDR-XM3004/PDR-XM3008
+# Pinetron PDR-XM3K | PDR-XM3004/PDR-XM3008
 The PDR-XM3 is a standalone H.264 DVR unit available in 4-, 8-, and 16-channel models. (NOTE: While the PDR-XM3004 and PDR-XM3008 use the same motherboard, I cannot confirm if the 16-channel model will be compatable).
 
 Also sold as:
 True-H SSA-0412/SSA-0824, CCTV Star SSA-0412/SSA-0824, Nippon Security Systems NSD-3004/NSD-3008
 
-#Supporting Research
+# Research 
 In Late-2024, I purchased a DVR branded as a "TRUE-H H.264 DVR" The bottom badge listed the  model number as "SSA-0412," with research showing SSA-0812 model number for 8-channel units. Inside, I found my first clue that this was a white-label job: a sticker with the code "XM3K-PINETRON-1" on the touch-panel circuit. Also, "XM3008-MAIN V1.1" is silkscreened onto the top side of the motherboard by the alarm I/O. On the underside, there's a silkscreen around reistors RE4, RE5, and RE6 that points to depictions of the proper configuration for 4-channel and 8-channel models. Unused footprints were clearly for a second NVP1114MX 4-ch Video Processing IC, supporting passive components, and BNC inputs. This is why I am comfortable in saying that Pinetron is the OEM for the white-labelled DVRs listed above, and that they use the same motherboard layout for both the 4-channel and 8-channel models.
 
-Chipset/Hardware:
+# Chipset/Hardware:
 -Nextchip NVS2200F - ARMv9-Core H.264 NDVR SoC
 -Nextchip NVR1114XM - 4-ch Video CODEC w/ 4-ch Audio
--i-MARV MDIN220 - Digital Video HD Upconverter
+-Macro Image Technology i-MARV MDIN220 - Digital Video HD Upconverter
 -Samsung K4H60838J-LCCC - 256Mb J-Die SDRAM (32Mbitx8 / DDR400)  
 -Spansion S29AL016J70TFI01 - 16-Megabit Flash Memory (3V-Only, Top Boot Sector, 70ns access time)
 -Marvell Devices 88SA8052-TBC2 - SATA/PATA Bridge
